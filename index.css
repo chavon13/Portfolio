@@ -241,6 +241,7 @@ opacity: 0;
         min-width: 250px;
         position:relative;
         z-index: 2;
+        right: 200px
     }
     
     .section__subtitle--intro{
@@ -398,5 +399,16 @@ footer__link:hover,
 }
 
 .portfolio__img {
-    padding: 25px;
+    padding: 50px;
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.portfolio-image {
+    position: relative;
+    left: 100px;
 }
