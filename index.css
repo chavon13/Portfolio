@@ -47,6 +47,13 @@ body {
     line-height:1.6;
 }
 
+@media screen and (max-width: 600px), (max-width: 800px) {
+    .about-me__body {
+        font-size: 12px;
+    }
+}
+
+
 section {
     padding: 5em 2em;
 }
@@ -273,7 +280,10 @@ opacity: 0;
         "subtitle img"
         "text img";
         grid-column-gap: 2em;
+        
     }
+
+
 
     .section__title--about{
         grid-area: title;
