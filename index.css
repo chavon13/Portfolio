@@ -262,6 +262,60 @@ opacity: 0;
     }
 }
 
+.my-services{
+    background-color: var(--clr-dark);
+    background-image: url('computerwork.jpeg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position:relative;
+}
+
+.section__title--services::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background:currentColor;
+    opacity: 0.25;
+}
+
+.services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: 200px;
+    flex-direction: row;
+    font-size: 20px;
+
+}
+
+.service + .service {
+    margin-left: 20em;
+}
+
+@media screen and (max-width: 600px), (max-width: 800px) {
+    .service {
+        display: flex;
+        max-width: 1000px;
+        margin-left: -200px;
+        flex-direction: row;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px), (max-width: 700px), (max-width: 800px) {
+    .service + .service {
+        margin-left: 5em;
+    }
+}
+
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
